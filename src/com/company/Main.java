@@ -33,6 +33,6 @@ public class Main {
         // We will introduce discipline later.
       // Test 2 :D
         // Test 3 Laurin
-      // UPDATE: 27.01.2020
+      // UPDATE: 27.01.2020 15:30 Uhr -
 
     }
