@@ -28,11 +28,6 @@ public class Main {
                 int three = dos / uno;
             }*/
         }
-        //test 24.01.2020
-        // Everyone is free to add some sysouts or comments here.
-        // We will introduce discipline later.
-      // Test 2 :D
-        // Test 3 Laurin
-      // UPDATE: 27.01.2020 15:30 Uhr ---
+        //
 
     }
