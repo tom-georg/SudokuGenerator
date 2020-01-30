@@ -7,8 +7,8 @@ public class SudokuChecker {
      * The method checklines
      * *
      * @param board (the sudoku board)
-     * @param x
-     * @param y
+     * @param x position
+     * @param y position
      * @return
      *     true:  The vertical and horizontal lines of the board
      *            are valid: No duplicates
