@@ -5,7 +5,7 @@ public class SudokuChecker {
 
     /**
      * The method checklines
-     *
+     * *
      * @param board (the sudoku board)
      * @param x
      * @param y
