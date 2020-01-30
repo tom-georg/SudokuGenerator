@@ -21,6 +21,7 @@ public class SudokuChecker {
      *        121
      *        322
      *   returns false because 213 (horizonal) is valid, 122 (vertical) is not.
+     *
      */
     public boolean checkLines(int[][] board, int x, int y) {
 
