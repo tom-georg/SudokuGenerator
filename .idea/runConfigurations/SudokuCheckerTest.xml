@@ -1,0 +1,21 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="SudokuCheckerTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <module name="SudokuGenerator" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="SudokuGenerator.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" value="11.0.5" />
+    <option name="PACKAGE_NAME" value="SudokuGenerator" />
+    <option name="MAIN_CLASS_NAME" value="SudokuGenerator.SudokuCheckerTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <option name="PARAMETERS" value="" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

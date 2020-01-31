@@ -15,9 +15,7 @@ class SudokuCheckerTest {
         board[0][0] = 1;
         board[1][0] = 2;
         board[2][0] = 2;
-
         assertEquals(false, sudokuChecker.checkLines(board,0,0));
-
     }
 
     @Test
