@@ -14,7 +14,7 @@ public class Main {
 
 
        /* Random r = new Random();
-        int a = r.nextInt(4);--
+        int a = r.nextInt(4);
         int uno = r.nextInt(1001);
         int dos = r.nextInt(1001);
         if(a == 0) {int zero = uno + dos;}
@@ -34,5 +34,5 @@ public class Main {
       // Test 2 :D
         // Test 3 Laurin
       // UPDATE: 27.01.2020 15:30 Uhr -
-        //Leander ist der König der Tester
+
     }
