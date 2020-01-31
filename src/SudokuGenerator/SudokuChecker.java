@@ -39,7 +39,7 @@ public class SudokuChecker {
                 checklist[checkoffhorizontal[j]] = true;
             }
         }
-
+        //das ist doof
         return false;
     }
 }
