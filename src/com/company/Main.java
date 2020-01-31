@@ -1,16 +1,32 @@
 package com.company;
+import SudokuGenerator.SudokuChecker;
+
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World! :D");
-        for(int i = 0; i<10;i++){
-            System.out.println(i);
+
+        //Erstellt ein 2D array, voller Zahlen
+        int[][] board = new int[9][9];
+        for(int i = 0 ; i < board.length ; i ++){
+            for(int j = 0 ; j < board[i].length ; j ++){
+                board[i][j] = i+1;
+            }
+        }
+        //In der 3. Spalte werden die Zahlenverändert, sodass nur unterschiedliche Zahlen in der Spalte sind
+        for(int i = 0 ; i < board[2].length ; i ++){
+            board[2][i] = i+1;
         }
 
-        Fenster f = new Fenster("TEST");
+
+        SudokuChecker sChecker = new SudokuChecker();
+        System.out.println(sChecker.checkLines(board, 2, 2));
+
+
+        //Fenster f = new Fenster("TEST");
+
 
 
        /* Random r = new Random();
