@@ -14,7 +14,7 @@ public class Main {
 
 
        /* Random r = new Random();
-        int a = r.nextInt(4);
+        int a = r.nextInt(4);--
         int uno = r.nextInt(1001);
         int dos = r.nextInt(1001);
         if(a == 0) {int zero = uno + dos;}
