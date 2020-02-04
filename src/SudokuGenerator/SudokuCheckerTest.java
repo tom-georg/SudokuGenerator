@@ -2,10 +2,11 @@ package SudokuGenerator;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-class SudokuCheckerTest {
+public class SudokuCheckerTest {
 
     @Test
     public void checkLines_test01(){
@@ -15,7 +16,8 @@ class SudokuCheckerTest {
         board[0][0] = 1;
         board[1][0] = 2;
         board[2][0] = 2;
-        assertEquals(false, sudokuChecker.checkLines(board,0,0));
+        assertEquals(false,
+                sudokuChecker.checkLines(board,0,0));
     }
 
     @Test
@@ -28,7 +30,7 @@ class SudokuCheckerTest {
         board[2][1] = 1;       //   002
         board[2][2] = 2;
 
-        assertEquals(true,sudokuChecker.checkLines(board,2,0));
+        assertEquals(false,sudokuChecker.checkLines(board,2,0));
     }
 
 }
