@@ -24,22 +24,24 @@ public class SudokuChecker {
      *
      */
     public boolean checkLines(int[][] board, int x, int y) {
-        //Ich hole zuerst eine Kopie der ersten Zeile,
-        // dann hake ich in einer boolean Array die Ziffern ab,
-        // welche in der ersten Zeile vorkommen.
-        //Sollte schon eine Ziffer abgehakt sein, returne ich false.
-        boolean[] checklist = new boolean[board.length];
-
-        for (int i = 0; i < board.length; i++) {
-            int[] checkoffhorizontal = board[i];
-            for (int j = 0; j < checkoffhorizontal.length; j++) {
-                if( checklist[checkoffhorizontal[j]] = true){
-                    return false;
-                }
-                checklist[checkoffhorizontal[j]] = true;
+        //Checkt alle Zahlen entlang der x-Achse
+        boolean[] checklist = new boolean[board.length];    //Eine Array die immer an der Position einer bestimmten Zahl auf true gesetzt wird
+        for(int i = 0 ; i < board.length ; i ++){
+            if(checklist[board[i][y]-1] == true){
+                return false;
+            }else{
+                checklist[board[i][y]-1] = true;
             }
         }
-
-        return false;
+        //Checkt alle Zahlen entlang der y-Achse
+        checklist = new boolean[board[x].length];
+        for(int i = 0 ; i < board[x].length ; i ++){
+            if(checklist[board[x][i]-1] == true){
+                return false;
+            }else{
+                checklist[board[i][y]-1] = true;
+            }
+        }
+        return true;
     }
 }
