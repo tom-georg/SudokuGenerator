@@ -20,9 +20,31 @@ public class Main {
             board[2][i] = i+1;
         }
 
+        //In der 1. Box werden die Zahlen so verändert, sodass die Box richtig ist
+        board[0][0] = 1;
+        board[1][0] = 2;
+        board[2][0] = 3;
+        board[0][1] = 4;
+        board[1][1] = 5;
+        board[2][1] = 6;
+        board[0][2] = 7;
+        board[1][2] = 8;
+        board[2][2] = 9;
+
+        //Gibt das board in der Konsole aus;
+        String output = "";
+        for(int i = 0 ; i < board.length ; i ++){
+            output = "";
+            for(int j = 0 ; j < board[i].length ; j ++){
+                output += " " + board[i][j];
+            }
+            System.out.println(output);
+        }
 
         SudokuChecker sChecker = new SudokuChecker();
-        System.out.println(sChecker.checkBox(board, 2, 2));
+        System.out.println(sChecker.checkBox(board, 8, 8));
+
+
 
 
         //Fenster f = new Fenster("TEST");
