@@ -15,14 +15,14 @@ public class Main {
                 board[i][j] = i+1;
             }
         }
-        //In der 3. Spalte werden die Zahlenverändert, sodass nur unterschiedliche Zahlen in der Spalte sind
+        //In der 3. Spalte werden die Zahlen verändert, sodass nur unterschiedliche Zahlen in der Spalte sind
         for(int i = 0 ; i < board[2].length ; i ++){
             board[2][i] = i+1;
         }
 
 
         SudokuChecker sChecker = new SudokuChecker();
-        System.out.println(sChecker.checkLines(board, 2, 2));
+        System.out.println(sChecker.checkBox(board, 2, 2));
 
 
         //Fenster f = new Fenster("TEST");

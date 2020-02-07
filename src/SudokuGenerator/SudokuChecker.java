@@ -44,4 +44,12 @@ public class SudokuChecker {
         }
         return true;
     }
+
+    public boolean checkBox(int[][] board, int x, int y) {
+        boolean[] checklist = new boolean[board.length];    //Eine Array die immer an der Position einer bestimmten Zahl auf true gesetzt wird
+        
+        return true;
+    }
+
+    //desch is ein Test
 }
