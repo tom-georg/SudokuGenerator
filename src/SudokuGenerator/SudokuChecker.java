@@ -5,6 +5,15 @@ import static java.lang.Math.ceil;
 public class SudokuChecker {
 
 
+    public boolean checkWholeLine(int[][] board, int y){//Checks a whole line using the chekcLines-Method
+        for(int x = 0 ; x < board.length ; x ++){
+            if (checkLines(board, x, y) == false){
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     public boolean checkLines(int[][] board, int x, int y) {
         //Checkt alle Zahlen entlang der x-Achse
@@ -12,10 +21,10 @@ public class SudokuChecker {
         for(int i = 0 ; i < board.length ; i ++){
             if(board[i][y] > 8){ //Alle Zahlen über 8 werden ignoriert, da dies das generieren eines Feldes erleichtert
 
-            }else if(checklist[board[i][y]-1] == true){
+            }else if(checklist[board[i][y]] == true){
                 return false;
             }else{
-                checklist[board[i][y]-1] = true;
+                checklist[board[i][y]] = true;
             }
         }
         //Checkt alle Zahlen entlang der y-Achse
@@ -23,10 +32,10 @@ public class SudokuChecker {
         for(int i = 0 ; i < board[x].length ; i ++){
             if(board[x][i] > 8){ //Alle Zahlen über 8 werden ignoriert, da dies das generieren eines Feldes erleichtert
 
-            }else if(checklist[board[x][i]-1] == true){
+            }else if(checklist[board[x][i]] == true){
                 return false;
             }else{
-                checklist[board[i][y]-1] = true;
+                checklist[board[x][i]] = true;
             }
         }
         return true;
@@ -41,10 +50,10 @@ public class SudokuChecker {
             for(int j = x ; j < x+3 ; j ++){
                 if(board[i][j] > 8){ //Alle Zahlen über 8 werden ignoriert, da dies das generieren eines Feldes erleichtert
 
-                }else if(checklist[board[i][j]-1] == true){
+                }else if(checklist[board[i][j]] == true){
                     return false;
                 }else{
-                    checklist[board[i][j]-1] = true;
+                    checklist[board[i][j]] = true;
                 }
             }
         }

@@ -10,6 +10,7 @@ public class Main {
 
 
         SudokuGenerator sGen = new SudokuGenerator();
-        sGen.generateField();
+        int[][] board = sGen.generateField();
+        sGen.printField(board);
     }
 }
